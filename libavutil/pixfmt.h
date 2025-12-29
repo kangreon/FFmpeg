@@ -251,6 +251,12 @@ enum AVPixelFormat {
      */
     AV_PIX_FMT_MMAL,
 
+    /**
+     * HW acceleration though Amcodec, data[0] contains a pointer to the
+     * AMLBuffer structure.
+     */
+    AV_PIX_FMT_AML,
+
     AV_PIX_FMT_D3D11VA_VLD,  ///< HW decoding through Direct3D11 via old API, Picture.data[3] contains a ID3D11VideoDecoderOutputView pointer
 
     /**

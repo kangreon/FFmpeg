@@ -22,6 +22,7 @@ HEADERS = ac3_parser.h                                                  \
           qsv.h                                                         \
           smpte_436m.h                                                  \
           vdpau.h                                                       \
+          aml.h                                                         \
           version.h                                                     \
           version_major.h                                               \
           videotoolbox.h                                                \
@@ -438,6 +439,7 @@ OBJS-$(CONFIG_H264_MEDIACODEC_DECODER) += mediacodecdec.o
 OBJS-$(CONFIG_H264_MEDIACODEC_ENCODER) += mediacodecenc.o
 OBJS-$(CONFIG_H264_MF_ENCODER)         += mfenc.o mf_utils.o
 OBJS-$(CONFIG_H264_MMAL_DECODER)       += mmaldec.o
+OBJS-$(CONFIG_H264_AML_DECODER)        += amldec.o amltools.o amlqueue.o
 OBJS-$(CONFIG_H264_NVENC_ENCODER)      += nvenc_h264.o nvenc.o
 OBJS-$(CONFIG_H264_OH_DECODER)         += ohcodec.o ohdec.o
 OBJS-$(CONFIG_H264_OH_ENCODER)         += ohcodec.o ohenc.o
